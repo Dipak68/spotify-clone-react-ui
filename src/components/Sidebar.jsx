@@ -13,32 +13,26 @@ const Sidebar = () => {
             <p className='font-bold'>HOME</p>
           </div>
           <div className='flex items-center gap-3 pl-8 cursor-pointer'>
-<<<<<<< HEAD
             <img className='w-6' src={assets.search_icon} alt="search_icon"/>
-=======
-            <img className='w-6' src={assets.search_icon} alt=""/>
->>>>>>> origin/main
+            
             <p className='font-bold'>Search</p>
           </div>
         </div>
         <div className='bg-[#121212] h-[85%] rounded'>
           <div className='p-4 flex item-center justify-between'>
             <div className='flex item-center gap-3'>
-<<<<<<< HEAD
               <img className='w-8' src={assets.stack_icon} alt="stack_icon"/>
-              <p className='font-semibold'>Your Libraryf</p>
+              <p className='font-semibold'>Your Library</p>
             </div>
-            <div className='flex items-center gap-3'>
+            {/* <div className='flex items-center gap-3'>
               <img className='w-5'src={assets.arrow_icon} alt='arrow_icon'/>
               <img className='w-5' src={assets.plus_icon} alt='plus_icon'/>
-=======
               <img className='w-8' src={assets.stack_icon} alt=""/>
               <p className='font-semibold'>Your Libraryf</p>
-            </div>
+            </div> */}
             <div className='flex items-center gap-3'>
               <img className='w-5'src={assets.arrow_icon} alt=''/>
               <img className='w-5' src={assets.plus_icon} alt=''/>
->>>>>>> origin/main
             </div>
           </div>
           <div className='p-4 bg-[#242424] m-2 rounded font-semibold flex flex-col items-start justify-start gap-1 pl-4'>
