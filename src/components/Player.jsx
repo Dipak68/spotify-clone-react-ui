@@ -8,7 +8,11 @@ const Player = () => {
     <>
     <div className='h-[10%] bg-black flex justify-between items-center text-white px-4'>
         <div className='hidden lg:flex items-center gap-4'>
+<<<<<<< HEAD
             <img className='w-12' src={track.image} alt='image'/>
+=======
+            <img className='w-12' src={track.image}/>
+>>>>>>> origin/main
             <div>
                 <p>{track.name}</p>
                 <p>{track.desc.slice(0,12)}</p>
@@ -16,6 +20,7 @@ const Player = () => {
         </div>
         <div className='flex flex-col items-center gap-1 m-auto'>
             <div className='flex gap-4'>
+<<<<<<< HEAD
                 <img className='w-4 cursor-pointer ' src={assets.shuffle_icon} alt="shuffle_icon"/>
                 <img onClick={previous}className='w-4 cursor-pointer ' src={assets.prev_icon} alt="prev_icon"/>
                 {playStatus 
@@ -26,6 +31,18 @@ const Player = () => {
                 
                 <img onClick={next}className='w-4 cursor-pointer ' src={assets.next_icon} alt="next_icon"/>
                 <img className='w-4 cursor-pointer ' src={assets.loop_icon} alt="loop_icon"/>
+=======
+                <img className='w-4 cursor-pointer ' src={assets.shuffle_icon} alt=""/>
+                <img onClick={previous}className='w-4 cursor-pointer ' src={assets.prev_icon} alt=""/>
+                {playStatus 
+                ?<img onClick={pause}className='w-4 cursor-pointer ' src={assets.pause_icon} alt=""/> 
+                : <img onClick={play}className='w-4 cursor-pointer ' src={assets.play_icon} alt=""/> 
+                }
+
+                
+                <img onClick={next}className='w-4 cursor-pointer ' src={assets.next_icon} alt=""/>
+                <img className='w-4 cursor-pointer ' src={assets.loop_icon} alt=""/>
+>>>>>>> origin/main
             </div>
             <div className='flex items-center gap-5'>
                 <p>{time.currentTime.minute}:{time.currentTime.second}</p>
@@ -36,6 +53,7 @@ const Player = () => {
             </div>
         </div>
         <div className='hidden lg:flex items-center gap-2 opacity-75'>
+<<<<<<< HEAD
             <img className='w-4' src={assets.plays_icon} alt="plays_icon" />
             <img className='w-4' src={assets.mic_icon} alt="mic_icon" />
             <img className='w-4' src={assets.queue_icon} alt="queue_icon" />
@@ -46,6 +64,18 @@ const Player = () => {
             </div>
             <img className='w-4' src={assets.mini_player_icon} alt="mini_player_icon" />
             <img className='w-4' src={assets.zoom_icon} alt="zoom_icon" />
+=======
+            <img className='w-4' src={assets.plays_icon} alt="" />
+            <img className='w-4' src={assets.mic_icon} alt="" />
+            <img className='w-4' src={assets.queue_icon} alt="" />
+            <img className='w-4' src={assets.speaker_icon} alt="" />
+            <img className='w-4' src={assets.volume_icon} alt="" />
+            <div className='w-20 bg-slate-50 h-1 rounded'>
+
+            </div>
+            <img className='w-4' src={assets.mini_player_icon} alt="" />
+            <img className='w-4' src={assets.zoom_icon} alt="" />
+>>>>>>> origin/main
 
         </div>
     </div>

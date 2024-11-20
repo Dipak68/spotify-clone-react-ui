@@ -24,7 +24,11 @@ const DisplayAlbum = () => {
                     <h2 className='text-5xl font-bold mb-4 md:text-7xl'>{albumData.name}</h2>
                     <h4>{albumData.desc}</h4>
                     <p className='mt-1'>
+<<<<<<< HEAD
                         <img className='inline-block w-5' src={assets.spotify_logo} alt='spotify_logo' /> 
+=======
+                        <img className='inline-block w-5' src={assets.spotify_logo} alt='' /> 
+>>>>>>> origin/main
                         <b>Spotify</b> - 1,323,432 likes - <b>50 songs</b> about 2 hr 30 min
                     </p>
                 </div>
@@ -33,7 +37,11 @@ const DisplayAlbum = () => {
                 <p><b className='mr-4'>#</b>Title</p>
                 <p>Album</p>
                 <p className='hidden sm:block'>Date Added</p>
+<<<<<<< HEAD
                 <img className='m-auto w-4 ' src={assets.clock_icon} alt='clock_icon'/>
+=======
+                <img className='m-auto w-4 ' src={assets.clock_icon} alt=''/>
+>>>>>>> origin/main
             </div>
             <hr/>
             {
@@ -41,7 +49,11 @@ const DisplayAlbum = () => {
                     <div onClick={()=>playWithId(item.id)} key={index} className='grid grid-cols-3 sm:grid-cols-4 gap-2 p-2 items-center text-[#a7a7a7] hover:bg-[#ffffff2b] cursor-pointer'>
                         <p className='text-white'>
                             <b className='mr-4 text-[#a7a7a7]'>{index+1}</b>
+<<<<<<< HEAD
                             <img className='inline w-10 mr-5' src={item.image} alt='image'/>
+=======
+                            <img className='inline w-10 mr-5' src={item.image} alt=''/>
+>>>>>>> origin/main
                             {item.name}
                         </p>
                         <p className='text-[15px]'>{albumData.name}</p>
